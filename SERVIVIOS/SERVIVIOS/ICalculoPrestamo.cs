@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SERVIVIOS
+namespace SistemaPrestamos
 {
-    internal class ICalculoPrestamo
+    public interface ICalculoPrestamo
     {
+        decimal CalcularCuota(
+            decimal monto,
+            decimal tasaAnual,
+            int plazoMeses
+        );
     }
 }
